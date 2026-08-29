@@ -294,24 +294,20 @@ section.tint + section { border-top: 0; }
 .steps strong { display: block; }
 .steps span { color: var(--ink-soft); font-size: 0.98rem; }
 
-/* ---------- Video ---------- */
+/* ---------- Figures ---------- */
 
 .media { margin: 0; }
 
-.studio-video {
-  display: block;
+.media img {
   width: 100%;
-  max-width: 21rem;
+  max-width: 24rem;
   height: auto;
-  aspect-ratio: 9 / 16;
   margin: 0 auto;
-  border: 1px solid var(--line);
-  background: #16232c;
 }
 
 .media figcaption {
   margin: 0.6rem auto 0;
-  max-width: 21rem;
+  max-width: 24rem;
   font-size: 0.9rem;
   color: var(--ink-soft);
   text-align: center;
