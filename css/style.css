@@ -75,11 +75,20 @@ img { max-width: 100%; display: block; }
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 1.4rem;
   letter-spacing: 0.02em;
   color: var(--ink);
   text-decoration: none;
+}
+
+.wordmark img {
+  width: 26px;
+  height: auto;
+  display: block;
 }
 
 .wordmark span { color: var(--accent); }
@@ -138,6 +147,13 @@ section.tint + section { border-top: 0; }
 .intro { padding: 4.5rem 0 4rem; }
 
 .intro h1 { max-width: 22ch; }
+
+.intro-photo {
+  width: 100%;
+  max-width: 21rem;
+  height: auto;
+  margin: 0 auto;
+}
 
 .intro .actions {
   margin-top: 1.8rem;
