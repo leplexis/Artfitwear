@@ -207,6 +207,11 @@ section.tint + section { border-top: 0; }
 
 @media (min-width: 46rem) {
   .split { grid-template-columns: 1.1fr 1fr; }
+
+  /* picture on the left, text on the right, without moving the heading
+     ahead of the image in the source order on narrow screens */
+  .split-media-first { grid-template-columns: 1fr 1.1fr; }
+  .split-media-first > :last-child { order: -1; }
 }
 
 .service h3 {
