@@ -1,15 +1,15 @@
 /* Leplexis — base styles */
 
 :root {
-  --ink:        #23313c;
-  --ink-soft:   #55697a;
-  --line:       #d9e3ea;
-  --line-soft:  #e9f0f5;
-  --bg:         #ffffff;
-  --bg-tint:    #f2f7fb;
-  --blue:       #3d7ea8;
-  --blue-dark:  #2c6188;
-  --measure:    68rem;
+  --ink:          #2c2836;
+  --ink-soft:     #625d73;
+  --line:         #e0dbe9;
+  --line-soft:    #eeeaf4;
+  --bg:           #ffffff;
+  --bg-tint:      #f6f3fb;
+  --accent:       #7a5ea8;
+  --accent-dark:  #5f4788;
+  --measure:      68rem;
 }
 
 *,
@@ -43,11 +43,11 @@ p { margin: 0 0 1.1em; }
 p:last-child { margin-bottom: 0; }
 
 a {
-  color: var(--blue-dark);
+  color: var(--accent-dark);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
-a:hover { color: var(--blue); }
+a:hover { color: var(--accent); }
 
 img { max-width: 100%; display: block; }
 
@@ -82,7 +82,7 @@ img { max-width: 100%; display: block; }
   text-decoration: none;
 }
 
-.wordmark span { color: var(--blue); }
+.wordmark span { color: var(--accent); }
 
 .nav {
   display: flex;
@@ -97,11 +97,11 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid transparent;
 }
 
-.nav a:hover { color: var(--blue-dark); }
+.nav a:hover { color: var(--accent-dark); }
 
 .nav a[aria-current="page"] {
   color: var(--ink);
-  border-bottom-color: var(--blue);
+  border-bottom-color: var(--accent);
 }
 
 /* ---------- Sections ---------- */
@@ -127,7 +127,7 @@ section.tint + section { border-top: 0; }
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--blue);
+  color: var(--accent);
   margin-bottom: 0.9rem;
 }
 
@@ -149,7 +149,7 @@ section.tint + section { border-top: 0; }
 
 .button {
   display: inline-block;
-  background: var(--blue-dark);
+  background: var(--accent-dark);
   color: #fff;
   text-decoration: none;
   padding: 0.6rem 1.4rem;
@@ -157,18 +157,18 @@ section.tint + section { border-top: 0; }
   font-size: 0.95rem;
 }
 
-.button:hover { background: var(--blue); color: #fff; }
+.button:hover { background: var(--accent); color: #fff; }
 
 .button-quiet {
   background: transparent;
-  color: var(--blue-dark);
+  color: var(--accent-dark);
   border: 1px solid var(--line);
 }
 
 .button-quiet:hover {
   background: #fff;
-  color: var(--blue-dark);
-  border-color: var(--blue);
+  color: var(--accent-dark);
+  border-color: var(--accent);
 }
 
 /* ---------- Grids ---------- */
@@ -283,9 +283,9 @@ section.tint + section { border-top: 0; }
   top: 0.1rem;
   width: 1.7rem;
   height: 1.7rem;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--accent);
   border-radius: 50%;
-  color: var(--blue-dark);
+  color: var(--accent-dark);
   font-size: 0.85rem;
   line-height: 1.6rem;
   text-align: center;
@@ -331,4 +331,4 @@ section.tint + section { border-top: 0; }
 }
 
 .site-footer a { color: var(--ink-soft); }
-.site-footer a:hover { color: var(--blue-dark); }
+.site-footer a:hover { color: var(--accent-dark); }
