@@ -43,12 +43,20 @@
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom synchronized swimming suits" } },
     { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Costume alterations and repairs" } }
   ],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "10:00",
-    "closes": "17:00"
-  }]
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "10:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "11:00",
+      "closes": "15:00"
+    }
+  ]
 }
 </script>
 </head>
